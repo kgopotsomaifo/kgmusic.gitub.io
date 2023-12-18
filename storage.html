@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>ARCHIVED ARTISTS</h1>
+    </div>
+    <hr />
+    <nav class="topnav1">
+      <h2><a href="hiphop.html">Hip Hop</a></h2>
+      <h2><a href="amapiano.html">AmaPiano</a></h2>
+      <h2><a href="afrobeats.html">Afro House & Afro Tech</a></h2>
+      <h3><a href="index.html">back to home page</a></h3>
+    </nav>
+    <hr />
+    <div class="imagesInStorage"></div>
+    <!-- *********************************FORMS*********************************** -->
+    <br />
+    <div id="commentForm">
+      <button class="commentHeading">Click here to comment</button>
+      <div class="commentContent" onsubmit="return false;">
+        <div class="mb-3" id="commentSection">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Leave a comment</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="commentInput"
+            placeholder=""
+          />
+          <br />
+          <button id="cmtBtn">send comment</button>
+        </div>
+      </div>
+    </div>
+    <div id="comment-container"></div>
+    <hr />
+    <div class="contact-container">
+      <form onsubmit="return false;" class="form-container">
+        <h2>Contact Us</h2>
+        <div>
+          <label for="editTitleInput" class="form-label">First Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="editTitleInput"
+            placeholder=""
+          />
+        </div>
+        <div>
+          <label for="editAuthorInput" class="form-label">Last Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="editAuthorInput"
+            placeholder=""
+          />
+        </div>
+        <div>
+          <label for="editGenreInput" class="form-label">Subject:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="editGenreInput"
+            placeholder=""
+          />
+        </div>
+
+        <br />
+        <div>
+          <button id="editBtn" type="button">Submit</button>
+          <br />
+        </div>
+      </form>
+      <br />
+      <p>Click hide or show to see or remove contact form</p>
+      <button id="hide">Hide</button>
+      <button id="show">Show</button>
+      <br />
+      <br />
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="storage.js"></script>
+  </body>
+</html>

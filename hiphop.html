@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Hip Hop</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Hip Hop</h1>
+    </div>
+
+    <hr />
+    <nav class="topnav1">
+      <h2><a href="hiphop.html">Hip Hop</a></h2>
+      <h2><a href="amapiano.html">AmaPiano</a></h2>
+      <h2><a href="afrobeats.html">Afro House & Afro Tech</a></h2>
+      <h3><a href="index.html">back to home page</a></h3>
+      <h3><a href="storage.html">see your archive</a></h3>
+    </nav>
+    <hr />
+    <div>
+      <h2>A Brief History of Hip Hop:</h2>
+      <p>
+        Hip-hop is an artistic and cultural movement that has influenced
+        everything from fashion to politics. One major manifestation of hip-hop
+        culture is its music. Hip-hop is a genre of music most often
+        characterized by a strong, rhythmic beat and a rapping vocal track. The
+        genre originated in New York City in the 1970s as a cultural exchange
+        among Black, Latino, and Caribbean youth and has grown into one of the
+        most consumed genres of music in the United States. As a culture,
+        hip-hop is built on four main pillars: DJing, rapping (also called
+        MCing), breakdancing (usually called breaking or b-boying), and
+        graffiti. (
+        <a href="https://www.masterclass.com/articles/hip-hop-guide"
+          >For more information, visit this site</a
+        >
+        )
+      </p>
+    </div>
+
+    <h3>Playlist for this Month</h3>
+    <table class="musicTable">
+      <tr>
+        <th>Artists</th>
+        <th>Song</th>
+      </tr>
+      <tr>
+        <td>Nipsey Hussle</td>
+        <td>Victory Lap</td>
+      </tr>
+      <tr>
+        <td>Jay Z</td>
+        <td>Family Feud</td>
+      </tr>
+      <tr>
+        <td>Earl Sweatshirt ft. Vince Staples</td>
+        <td>The Caliphate</td>
+      </tr>
+      <tr>
+        <td>Drake & 21 Savage</td>
+        <td>Rich Flex</td>
+      </tr>
+      <tr>
+        <td>Nas</td>
+        <td>Michael & Quincy</td>
+      </tr>
+      <tr>
+        <td>Kwesta</td>
+        <td>Nomayini</td>
+      </tr>
+    </table>
+    <br />
+    <button class="button" onclick="myFunction()">Click to like</button>
+    <h3>Artists for this Month (click add item to add to archive)</h3>
+    <br />
+    <div class="img">
+      <div class="page-images">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/nipsey-hussle-attends-revolvefestival-day-2-on-april-15-news-photo-946731798-1554145090.jpg?resize=640:*"
+          alt="Neigbourhood Nip"
+        />
+        <p>
+          <strong
+            >One of the greats of West Coast Hip Hop, the late Nipsey
+            Hussle</strong
+          >
+        </p>
+        <button class="addButton">save to archive</button>
+      </div>
+
+      <div class="page-images">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFRUYGBgaGBoaGRgcGBgaHBgaGBoaHBwcGhocIS4lHCErIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHzQrJCs0NDQ0NDE0NDQ0NDE0NDQ2NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAQMAwgMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xAA7EAACAQIEAwUECQQCAwEAAAABAgADEQQSITEFQVEGImFxgRMykaEHFEJScrHB0fAjYoLhovEzNLIV/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAECAwQFBv/EACkRAAMAAgEEAQQBBQEAAAAAAAABAgMRIQQSMUFRIjKBoRMUcZGx8EL/2gAMAwEAAhEDEQA/AJgEMCGBDAnA2ehCAgtFWgtABNodoq0F4AJtDtKfiPFmUk0glRVDZrNZgQeQA18Y7wbjKYhCwFmBsym1x0PlJ/x1ru9Ee+d69k7FIzI4Q2YqQp6G2kz/AGZx5YlD3QndAvcXXQ2NtdRNK50M5XVxL0nZUZlyuWBFtVJuPzluGO+XJVmvspNnVIZlD2e48tVQjsM/qAfL0tLuviEQZnYKNrk21MpqHL0y2bVLaE4iuqKWc5VG56TL9o+0gQKtBgxYElhrlGw9b3+ER2w46ADQQXzKCX9dl67TCrUINxymvB0/HdRkz9Rp9sm37L4xKaWvnq1GzOeY6A+VyfUzUY/HLRTO22wA3YnkPGcw4DXyVlb7oJ+Vv1l52j4wtQ0kQ5yCGPS52HW8eTC3lHizpYtm2wWIFRVcAgML2O484/MvwTGVmJeq6Iikgrb+fwS1XjlA1DSzagA5vs62sAeZ1mWsbTaRpnImk2WcSYwuOQsVUliN7a6SQJDWiSCgMO0K0QwrQrRREEAG7QRcEewFWh2hw4gCAgtDh2gA3VTMpU31BFwbEX6HlKGjxBqDtQxDO6aBKhXdW0sxG5ubXlxj8YKSF2Byi1z0vzM592g4wK7ZghQrorZibqOotp1uJfgh1xrgozWpW98i+1CijXDU1yq2unM8/TbSUq1O9nQlSDcAH9Y5W4gXQo2t7NmO4caXHmND5SIg9Ok6MTqdPyc68m62vH+joHZnjXt0NOo4z97Xa4PP5zG8RoPRdlfViCCeTC/K3kJDo12RsyGx5W6nw6R3H8RaqEDkFlv3ram9t/h85GcXbTa8MnWbvlJ+V+xqnVsQykhhqD0Ilxxvjy4ikispDqb5ge6dLHT9Zny0eo1bBlsDcdNvKWOE2n7RVNtJrfDE1qjNa5J0tEga8v8AqJuLwWF5PRXscXmfiJKpFFZGW9xqxPXlaQwLQrxNbHNa5LjHcQuoCnW5zdDImGdmLHLnY215DXw9JEGsXTqMO6p3Ow3PKQUKVpFn8jb2zS8Jq+wZizBWe1xfSwJ6+c3mFa63BuJyiphVRwHqAndragep5zb9nuPUgi0mcDIgAJ0uFH7TF1GPf1Ln8G7Bk/8AL4/JpoLRNGqrKGVgykXBBuDHJjNgi0TaOWhWgAi0EVaCACrQwIYhwAK0O0EOAFVxzF0VputV1GZSMtwSb87TlWJyhiFYsAbAkWuPLl5TpPaHgVGqGqEMHsO8pJ2/tOhmF4zgcjZlQqjbDoQNr/Ob+lcrhPlnP6pU+dcIq8w9YnMTCZbRKm83IwNi7GGrE+FopjZfPaNkj0iAVmPL8oktr0hEwzJCYUT/AAn9ov8Agg9ICFXv8I3mHlFiJyj5QAUWtAhibwDxgPZacONLMwdL3sE12M0lPgiizewBt4mx8xMjhKLNfKwBtz5zQYTjuMSyhQ1uRF7geRmPNFN/S/xs24LlL6l+TY8LqMAFFLIoGlthyltKHg3GatcgGjlUe8xNtedgZoBOfcuXpnRmlS2hFoVo4REyJITaCKggAYEO0MQQAZxFXILhSx5AbmVGN41VQ2XDO21jfQ38hLxhpOb9o+Mv7R0RrKDoQST0Nz1uDLsMd1a0U5r7J3sd4v2kxGVqVSmFLf3ahTfTTY/DbaUicUf2RouA6HVb+8h6g/pILuW1cknxMbz6zpTjlLWjl3mpvewNaEw9YFN9TCyy4pb2JNzz/wBRSrFQ4aIiQgirQXhxgC0SVjloUAEZYlvnHbwEXi0A0ohn08oGESqwJIdpVCrAre4kxMbUBzFifPUSDn08/lFp66yFSn5RZNNeGbvgGWqBlq98AZ1GnwmuoUsotOTYGkyEOHCMNVIN9RrrN3wPtJ7dlTIS+W7sBZQfI6ic3Nh0255R08ObaSrhmigIgEMTMaQrQQXggAdodoqCAhmvTzKVva4tM5W4CrHIiKqDdjqWPUzSYiqEVnY2VQST0AmB432ixBGgVEfVNO8y6a25DxI8ry7DF09SVZaiVuijx/CaiBjUGXWyi4ObXUix2+G8qmSx1jlTEu27E+pjBM6sql5ORdS/tDveAm0NYFS5k/BWKo02Y2Ak6lw/7x9BJODo2EnIkpvI/RfGJeWRaPDk+7f1MkrgKf3BJVOnHkpSl1XyXqJ+Csq8JQjQWPmZHfg45MflL/2PhEGl4RrJS9ieKX6M5X4Uw91gR4/6kCpTZfeFprHpyFWp8iJOMz9ldYF6M6WhkSTjcLl7y7dJEDS9UqRnqXL0wh0iliXF4EOsYJjgY7Wmi4NxB1yUwuQMbZ1XU3P2pnrSThsS6kd4gX33tKckd06L8V9tbOvYdMqgXvpvHbTOdl+Mq6BGa7g2G+u/w0E0c5Nw5emdeKVLaBBBBI6JC7Q4IICKHtUxKIg1z1UDL95AbsD4WGs5xxvFe2rO490nu+CjQDwHhOvYqiHUiwvY2PS45Tk3EOGvTZs62I1I00Bm3pLlcP8A7Zi6uaa4/wC0VeSEFvFsfjCbe38vN5zWEI9hkuRGVWTMCt2EKfA5XJbUV0kyitzGEG0lUBrMvlm1cE6jS/lpNXDSDTYiSlq9YcD5HTh7a7wnpQxVES9fxgBEq0pXVkljWxEgVmvEBXVkuDKCumViPGaRxKTHJZz5S7EzPmnjZDBvFsOcbY2i+UvM44h1uJreBcNGIX3rW3uJk0F9rnTXTa02fY2qVa5bQi1pk6n7do3dJy9MnYfgNSm4KZd73/WaiiDlGbfnFiGJzm2+WdKUlwgoIdoIiQYMOFaHEREubb6eM5x214lTeoUQXKizt1I+yBzt1mn49w5nYvVrf0gBlogWBNtcx5i95heIYBV7+qXvpy8LeE2dPEKttmTqKpy0kVTtsLa8zCimIHO5jc6COawJvLnCUgAJV4ZLtL2imkryP0WYp9i89tY/h8SOcZCa3NxJeHpg/Z+MrSRa+70TaLqdiOsn0MGTsZVihbW2/jJWGrlSNSLdYqSROXRKq4UiNjCHWWKYjNc+EjnH2DAW3+UjwS5IFTCESDWox7F4xzsfS8rXeo3O+/QfznJKd+yFVr0JqC0peIe9LFnYGzSDj05+MshaZVb7pIDC8TbSKMl4DDBmJPLW3WW1SlbZVMOmkhGFU3GhOuw89ps+z+FNOoGK9x2sL8jaFw3s8zqamouV7ttxfVptsPwdKasWubEZL9bDWYctu1x4N+GFjen5ABDioJhN4mCKgjAMQQocREz/AGi4k1IW9kWW182hA/bznP8AiNSpXvVYd3YdPTr4zrGMw+dSt7XmC4t2fqUycjdw62OwPh0mvp7if7/Jl6jHdf2+DJZf505wnW2npJiYZi4FtnAJ82tFcQwZQ366zf3cnO7HoRw5bnaXtNZT8MG58ZdURKcj5L8S+kjYh2vZQSYxiHek6q+WxAYtYt108drGWrUSdjHcPh2JGZA1usU0l5HUt+GIw3D3NBcQGAzE933W05gE2Ybx9n7ovqdb6W23uDF4jTfKLbKLaesiB87XO3KO2ghNeS0w1cBDK8nMSB4km9rCTFXuyuYhX1FwdCJVPJZXCGquLKWNgoN8pyFi1vG2sjVMbfXQg87FdbX587G8sMfTFXKWdkZBZDYbctRqP5rCwuSlQalYNnN2YnTawAHhYTQ+3RRqtlcGzCQeJjujzk2hQtexuOXWQ+JnT1in7gr7eSsA8JfcBwre0S4vcgW66iVGGAuL9Z1XsBwZXvWcbGy+keTbalewxalO36NThsAKYDOyrp7trx6pRWrojrccrWvK/GVS7k+Nh5CNIxBuNxMVZZluEuP2bliql3t8/oXiMOyGzC36w8Hhs7Zb20veXWOph6ObmBmH6yv4L/5P8TB4Uskr0xLNTxN+Gh7/APFP3x8IJc2gm7+kxfBh/q8vyZC0O0EOcg64Vo1VphhYi4jwhEQAwPaFESqqIAveHqZU8YFwPDfz6S67XcIVH+sBzckEggEd3odxK/G0gyX9f2m/G12rRz8yfc0/wVWBS1z4y4oCQKCWk1DJVyyMLSJ6uohio50GnlI6C8ucFTUd47CJFhX4nCZEzOdTsvMxjBU76kSwxpu+ZtdLgfpI1PFsCA1Mqu4axsfODQlpEk0tJVY1LfGaM1kyba9b8rSretSe6328LgeZkETrwR0uoswuP5tEPQQ6gS0WnmQg7obX6rbSV7JaS2Q0QK9HLKLiGpAmixL3EocQt3lmPzsqyLjRDy2BnW/ot4wj0jRNg69T7wM5u2CZwFUd7kOo6R7A8NKsL5wynXIbMp8DyIk/5ZXLIrFb4Xg61VWzEdCYm0Z4JiEqIFqV3arc3Z0VSRfQEKLGw0vLihTpIczPnI2AEw1i3XDWvnZvWbU8p7+NE7EnJQsfu29TK/gg/qf4mNY/GmoeijYfrFcKqqjksbC0seSayzrwipYqnFW/LNBeCRvr1P74gnQ/kn5X+Tn/AMd/D/wZsQxEiGJwzu6DhGHCMYjnnbJnxFdkQ2WkFBB0uW10HPeVwq5EVXNzsp8us0nbDJQvUUd+oRddNcotf8pksfh2UK7v32N8t9FXp567TdifdKXr97MGVdtN+X+kiUiySgjSDWPJGxImUJZ57Jr4n9pUq+mker4gBN9SPhaOUDYiq/MmFQrM5yhjYdSfD5RhUZxsFB68/wCWkvDUlF+8MxHiBboDHoOWKxFMBdLnoIzSxQYWCrcf263HlvJbUydDkBsRa4/K8pV7jm4tz/T9oa2J8Gg4fV0ZSdTr5mQ8SReJpOCCV3Gsaq1L6yDJbIWIbeQaVIM9jtpJleVyuQ1xveTnhFbW2aHgNLNibcl1+U2VHBIrMwXVjczK9jaDF2c7Wt5mbITFkf1HQhakMIt72F44I3eC8rJjkETmgBgAqCJggMOCCCRGGIDCldx7iq4ekXOre6i/eY7eg3PlJSnT0iNUpW2M8d4ej5apF3T3bmw16gzJ4Hs49fEEVmGRUaoxUgnKNgOlyfkZl+JYypVcvUcuTrqbgeQ2A8BOmfRfwdkR6lRbe1AGW32ADa/nmJ+E6eHA4029nKzdROTaS1+TIsQG025eUWDJ/HuDthqrUz7o1RvvIdvUbHy8ZXXiqdMlNbQ+gJtbeCvo5uAbAW6aDxiKD2MkVUzWaJcDfJHvUOpH88OsMYhtAwtrFUnINrkiWJdGXvLcnmP2+MsWvQ1r2QPrW4te5Ot+sL60Be+oO46SbiGpL7qadDbwlcwDbLbe5PjBpewfHgVhdHGU9wn4Xv8Az0hu28Kimt/H46Wjdd9TK2KeBis2hPQRvguCNVwPU/GJxDfZ66n9JtezPCvZpnPvMNukqyX2zovxRt7ZbYPDKiBVAGkkQCCYzWKggggMEIQoIAKvBEwQEOQQSv4nxejhwS7ANYlUBuzeS/rtBS3wgqlK2yVisSlNGd2CqouSf06nwnLu0XGGxNTNsi6IvQdT4n9hE8Z41VxLXc2Ue6g91f3PiZVGdLB0/Z9VeTl9R1Pf9M+P9kjh6p7Wn7T3A65vK/Pw6+F56A4Xh8qCeeLXncPo64v9Zwqhj36X9N/Gw7jeq29QZsRi2T+1HBhiaJAHfS7J49V9bfG05M1Mi4I1H8M7uFmJ7admSScTRXXeog/+wPzHr1kKnfJZFa4OcLoZOpvoBGjTvrAhymx57SipNM0OmnreF9aKm1gfAiPUyDLBHUAaXMguCx8laXvuo69IzUb/AKk/GWbY2tK2o0PLE/AVSoAJAqVLaxeIqXjDqSVXmT/r9YVwhQt1osezvDjWqBm90G5PXwnQ1FtBIfCsEtJFRRy1PUybaYcldzOhE6QIqJipAmCJMEVABMEEEABBBBARzniXa/EVNEIpL0TVvVz+gEzrOSSSbk6kk3J8zuYkmJBnanHMrSRwryXf3MXDAgAipYVhhJpewfH/AKpilzf+OqVR/wC257j/AOJPwLTMwMl4xHp9YtRKHsbxQYnCUnzBnChH6iogAa/QnQ+TCX6wAxPansfmvWwy97d6Y+11KeP9vw8edY1rA3BBF7i3MaajlO+iZXtf2SXEqz07JWtvsr25P4/3Sup+Cyb9M43R4iBzk6nxHTf4ysxnDHR2R0ZHB1UixH86+UiDhlQmwBlTmS2bova/EVFyTK369nOkrxgnzWI+PnJ2Hwlm8ecXbKJd1Ux1UJ1k7HYT6t9VxDglamdmA5BHGW3iQbwqdIkhQLkkADxOgmm+krC5MJhrD3CAfJkI/MCOZVb2Krca15LjDYhHRWVgysLgjmI9Oa9lOP8A1dijkmk5vprkbqB06idGoV0dQ6MGU6hgbgzBmxOK16OjgzLJO/Y9BExUpLwQQQQAETFRMADtDgggBxJjyhCC0AE7p54cEOJEWBGICwO1oZMZtEB1L6I+LAM+GY2D99B/eB3h6qAf8TOrgTzXwHHtQqpUT3kYMPGx1HkdR6z0dgsStREqIbq6hlPgwuIwJCwnhiQeMk+wrZfe9lUt55GtBAZbGYjh/FBlo109sAchIZWNjtlYAuvlfe8w+Pwr0HKVFysNx18QeY8ZgnQ2Xla1jzB39JZ1u0WKemKdSp7QKe6zjM69VD+8VPQ320tK7lMsi3JaYmr0gw1OwvKGhxU3763HUbj0nT+z+C4cqCrXxmHqWscntFVFJ1GZWIZj4EDbaVdleEXPJPlkbsXwR6lT6xUQikqnIx0zsdLqOYAvrtrJ/bbDnEUnRSARkyX0HdYEA9L7X8ZO4v26wKKctZXI0VKYLX6AH3R5k2nMOOcfq4kkXyITfIp3/E27fl4S5T2rRQ67m2UKNYajnLbg3GalBs1NtD7yE91vTkfESpenEA2IkalUtMcU5e0dd4NxqniVuhs495D7w8R1HjLO847RrsrB0Yqw1BBsRN1wDtStSyVrK+wfZX8/un5flMOXp3PM+Dp4eqVfTXk1N4cQDDmU1ioRhxMAFQRMEAOKEddoZiiI2Dbfb8p3Tzo4Iq/+okL/AKim0gAhjCiIYkQH8O1iJ2v6LeK+0w7UGPepG6/ge5HwYN8ROI095suwnFfq+KpsTZH/AKb/AIXsAfRsp9DGgO6zP9uMb7HA4lwbH2TKp/ufuL83E0Mxf0qqx4dVsL9+lm8vaJr8bRoDiAFxGnS0cwz90jpI2Mc2iGNuAduUXhqYN82214eD0Un4/CTa/A8Sie0ei6JcDM6lRc7AZrEyIEZaacz8ITvGwhFhbU7D8yYdNbtaMB1F0zH/ALkRheTMQ9haFi8E9JgrizMitbwcXH7eYMQEehWtvJV5XsLGO0atjYwJml4N2lq4chT30+4xOn4W3H5TccI47SxAsjWfmjaN6dfScqvDVyCCCQRsRoR5SjJ083yuGaMXU1L0+UdnBgmB4H2tdWCVznQ6Z7d5fE9RN6jAgEag6g9ZhvHUPTOjjyza2hUEGWCVFpxZmhU6Rb9+Ueo4fmfh/uSbTuHnSNktEtHnEaYQAZIgAjhWHaIAkk2g8iDyj9Mxgegux3FfrOEpuTdwMj/jTQk+Ys3+Um8XwyVaT0XFxURkI6Ai2b039Jzn6KOKZalTDk6VF9on4k0b4qQf8J0PGDKwf0MaA86YrCNRrVaT6MjMh8x/PnK+qtxNh9JGGycQqMNqiU6g9Vyn5oZj2iYIk9nsE1fE0qA+26qfw3ux9FDGdp+kxB9Tv910Pzt+sw30OcM9pi3rEaUqdh+Ooco/4q/xnUu1/Cvb4SrTHvFQV/EpBHzhIM880xdzbqYpKeW7c/ykinSKswIsVJBB3BGlj0kevUvpEMteyHCfrWLRCLov9R/wry9TYS/+lHh+V6VUDcMhP4TmX/6f4TUfRtwL2GG9q479az+K0/sL8Dm9Y59IfDvaYOoQNaZFQeS+9/xLSSXAqOJ1xz9Y0wjzjSMiVsmh2jV5GSJBj1Kp1jGSJvew3Fc6exc6p7v4enpMDeT+DYs0qyODsdfI7ynNHdLRbgydtpnXoJGVwQDffX4w5y9HYOUUP1ijDgncPPDbRpocEAEQoIIAGseSCCAGg7IuVxuGINv6qD0Y2I9QSPWdyxmqHyggjQHJvpXH/qtzKVhfwBp6fM/Gc3feCCDBHYfoTQfVq5tqcQAT1Appp/yPxnRMf7jeX6woIkDOK/SNh1TEgooXPTVmt9ptRczFUEBqICLguAR1BO0EEKGj0mEA0AsAAAOkg8TQGm4IuCrAjqCu0OCNEWedOR9JGO8EEgychGGIIJEkx+hH039YUEkJHQsJiG9mnePur+QgggnMO0j/2Q=="
+          alt="Hov"
+        />
+        <p><strong>One of the greats of East Coast Hip Hop, Jay Z</strong></p>
+        <button class="addButton">save to archive</button>
+      </div>
+      <div class="page-images">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/7/70/Kwesta_-_DaKAR_II.png"
+          alt="Kwesta's Dakar 2 album"
+        />
+        <p>
+          <strong
+            >South Africa's best selling Hip Hop album of all time, Dakar 2 by
+            Kwesta</strong
+          >
+        </p>
+        <button class="addButton">save to archive</button>
+      </div>
+      <br />
+      <!-- <div class="page-images">
+        <img
+          src="https://www.treblezine.com/wp-content/uploads/2023/08/earl-sweatshirt-2023.jpg.webp"
+          alt="Neigbourhood Nip"
+        />
+        <p>
+          <strong
+            >Up and coming Hip Hop rapper, Earl Sweatshirt. He is of South
+            African descent</strong
+          >
+        </p>
+      </div> -->
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

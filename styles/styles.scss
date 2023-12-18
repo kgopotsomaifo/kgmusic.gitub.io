@@ -1,0 +1,196 @@
+$primary-color: gold;
+$secondary-color: black;
+
+@mixin margins($pixels) {
+  margin-left: $pixels;
+  margin-right: $pixels;
+}
+
+@mixin cursor($pointer) {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  margin-bottom: 20px;
+  .row {
+    h1 {
+      color: $primary-color;
+    }
+    h2 {
+      color: silver;
+    }
+  }
+  h3 {
+    color: $primary-color;
+  }
+}
+
+.heading {
+  display: flex;
+  justify-content: space-around;
+  color: $primary-color;
+  background-color: $secondary-color;
+  @include cursor(pointer);
+  h1 {
+    display: flex;
+    justify-content: space-around;
+    color: $primary-color;
+    background-color: $secondary-color;
+  }
+}
+
+.topnav1 {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  width: 70%;
+  @include cursor(pointer);
+  @include margins(200px);
+}
+
+.codes {
+  display: flex;
+  justify-content: space-around;
+
+  h1 {
+    color: $primary-color;
+  }
+  img {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+h1 {
+  color: navy;
+  font-family: "Verdana";
+}
+
+.img {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.page-images {
+  img {
+    height: 400px;
+    width: 400px;
+    display: block;
+    justify-content: space-between;
+  }
+  p {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+table {
+  font-family: "Franklin Gothic Medium";
+  width: 50%;
+  border: 5px solid black;
+}
+
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+#animateBtn {
+  margin-left: 10px;
+}
+
+.body {
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+  // border: 1px solid black;
+  width: 70%;
+  margin-left: 1%;
+  h3 {
+    color: black;
+    // background-image: url("https://cutewallpaper.org/28/cool-wallpaper-images-for-css/a-complete-guide-to-css-gradients-csstricks-csstricks.png");
+  }
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  h2 {
+    color: navy;
+    font-family: "Verdana";
+  }
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  position: relative;
+  background-color: black;
+  border: none;
+  font-size: 28px;
+  color: #ffffff;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #90ee90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button:active:after {
+  background: #90ee90;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.imagesInStorage {
+  img {
+    display: inline-block;
+    justify-content: space-between;
+    height: 300px;
+    width: 300px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+.contact-container {
+  margin-left: 10px;
+  float: left;
+  width: 20%;
+}
+
+#comment-container {
+  margin-left: 1%;
+  width: 50%;
+}
+
+#commentForm {
+  margin-left: 10px;
+}
